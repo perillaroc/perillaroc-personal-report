@@ -9,3 +9,9 @@ h1 {
 p{
   font-size: 2em;
 }
+
+#thailand-map {
+  margin:auto;
+  height: 480px;
+  width: 1024px;
+}

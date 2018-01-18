@@ -14,14 +14,23 @@ $(document).ready(function() {
       'whitesmoke',
       'whitesmoke'
     ],
-    scrollOverflow: true
+    scrollOverflow: true,
+    anchors: [
+      'section0',
+      'section1',
+      'section2',
+      'section3',
+      'section4',
+      'section5',
+      'section6'
+    ]
   });
 
-  var mymap = L.map('thailand-map').setView([7.90046, 98.29926], 18);
+  var mymap = L.map('thailand-map').setView([7.9003468, 98.2988683], 18);
   L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 20,
     attribution: 'Map data <a target="_blank" href="http://www.openstreetmap.org">OpenStreetMap.org</a>' +
-    ' contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    ' contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
   }).addTo(mymap);
 
   var marker = L.marker([7.9003468, 98.2988683]).addTo(mymap);

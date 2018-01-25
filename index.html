@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Perillaroc's 2017 report</title>
+  <link rel="stylesheet" type="text/css" href="static/common/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="static/common/css/jquery.fullpage.css" />
   <link rel="stylesheet" href="static/common/css/leaflet.css" />
   <link rel="stylesheet" type="text/css" href="static/css/main.css" />
@@ -28,11 +29,19 @@
       <p>美食、海港、商店、市场和迪士尼乐园</p>
       <img src="" data-src="./static/image/hongkong.jpg" height="512" />
     </div>
-    <div class="slide">
+    <div class="slide container-fluid">
       <h1>泰国</h1>
+
       <p>普吉岛，大海的气息</p>
-      <div id="thailand-map"></div>
+      <div class="row justify-content-md-center">
+        <div id="thailand-map"></div>
+      </div>
       <!--<img src="" data-src="./static/image/thailand.jpg" height="512" />-->
+      <div class="row justify-content-md-center">
+        <button type="button" class="btn btn-light" id="thailand_phuket_town_button">普吉老城</button>
+        <button type="button" class="btn btn-light" id="thailand_pathong_button">芭东</button>
+        <button type="button" class="btn btn-light" id="thailand_luguna_button">拉古娜</button>
+      </div>
     </div>
   </div>
   <div class="section" id="section-3">
@@ -93,8 +102,14 @@
 </div>
 </body>
 <script src="static/common/js/jquery-3.2.1.js"></script>
+
+<script src="static/common/js/popper.min.js"></script>
+<script src="static/common/js/bootstrap.min.js"></script>
+
 <script src="static/common/js/scrolloverflow.js"></script>
 <script src="static/common/js/jquery.fullpage.js"></script>
+
 <script src="static/common/js/leaflet.js"></script>
+
 <script src="static/js/main.js"></script>
 </html>
